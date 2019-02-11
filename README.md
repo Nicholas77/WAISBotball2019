@@ -1,2 +1,2 @@
-# WAISBotball2019
+# WAIS Botball 2019
 A repository containing code for the Bobtail 2019 competition
