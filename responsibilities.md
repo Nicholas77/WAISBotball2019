@@ -7,3 +7,5 @@ Fix the broken power line - Nolan, Turner.
 Get Bot Guy off the skyscraper - Matthieu, Anthony, Sai.
 
 Documentation - himena(hope it's spelled correctly), Nicolas.
+
+Putting water in the blue taped tube - Oscar, Nayeli
