@@ -1,0 +1,15 @@
+int main()
+{
+    //turn right
+    motor(2,100);
+    msleep(400);
+    //forward
+    motor(2,100);
+    motor(1,100);
+    msleep(2750);
+    //turn around
+    motor(1,50);
+    motor(2,-100);
+    msleep(710);
+    return 0;
+}
