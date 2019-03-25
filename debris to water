@@ -1,0 +1,22 @@
+#include <kipr/botball.h>
+
+int main()
+{
+       //turn left
+    motor(1,-100);
+    motor(2,65);
+    msleep(350);
+    //forward
+    motor(2,100);
+    motor(1,100);
+    msleep(1600);
+    //turn around
+    motor(2,45);
+    motor(1,-90);
+    msleep(600);
+    //forward
+    motor(1,60);
+    motor(2,60);
+    msleep(750);
+    return 0;
+}
