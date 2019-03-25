@@ -1,0 +1,7 @@
+int main()
+{
+  motor(1,100);
+  motor(3,83.5);
+  msleep(7000);
+  return 0;
+  }
