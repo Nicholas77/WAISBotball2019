@@ -1,0 +1,31 @@
+#include <kipr/botball.h>
+
+int main()
+{
+    
+    //turn left
+    shut_down_in(118);
+    motor(2,100);
+    msleep(600);
+    //forward
+    motor(2,100);
+    motor(1,100);
+    msleep(2900);
+    //turn around
+    motor(1,50);
+    motor(2,-100);
+    msleep(760);
+    // arm movment
+    enable_servos(1, 2);
+    set_servo_position(1, 875);
+    set_servo_position(2, 1550);
+    // slow turn
+    motor(2,95);
+    motor(1,100);
+    msleep(3000);
+    // forward to clear debris
+    motor(2,100);
+    motor(1,100);
+    msleep(3000);
+    return 0;
+}
