@@ -1,0 +1,25 @@
+
+    int main()
+{
+    //turn left
+    shut_down_in(118);
+    motor(2,100);
+    msleep(844);
+  
+  //forward
+    motor(2,100);
+    motor(1,100);
+    msleep(2500);
+    //turn around
+    motor(1,50);
+    motor(2,-100);
+    msleep(1500);
+    // arm movment
+    enable_servos(0);
+    set_servo_position(0, 925);
+   set_servo_position(3, 1850);
+    // forward to clear debris
+    motor(2,100);
+    motor(1,100);
+    msleep(4000);
+    return 0;
