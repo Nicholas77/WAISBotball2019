@@ -1,0 +1,49 @@
+//turn around
+    motor(2, -100);
+    motor(0, 100);
+    msleep(815);
+    //forward
+    motor(1, 100);
+    motor(2, 100);
+    msleep(2600);
+    //turn around
+    motor(2, 0);
+    msleep(700);
+    //forward to the fireman
+    // servos manipulation
+    enable_servos();
+    set_servo_position(1, 800);
+    set_servo_position(2, 1600);
+    //reach for fireman
+    motor(1, 100);
+    motor(2, 100);
+    msleep(700);
+    //grab for fireman
+    set_servo_position(2, 1100);
+    motor(1, 0);
+    motor(2, 0);
+    msleep(500);
+    // get out of fire station
+    motor(1, -100);
+    motor(2, -100);
+    msleep(200);
+    // fireman go up
+    set_servo_position(1, 0);
+    motor(1, 0);
+    motor(2, 0);
+    msleep(400);
+    //rotating to flood
+    motor(1,100);
+    motor(2,-100);
+    msleep(600);
+    // forward to flood zone
+    motor(1, 100);
+    motor(2, 100);
+    msleep(2500);
+    //get to start of program
+    set_servo_position(2, 1600);
+    motor(0, -100);
+    motor(0, 100);
+    msleep(200);
+    return 0;
+}
