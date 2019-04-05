@@ -1,0 +1,42 @@
+Create Code
+
+#include <kipr/botball.h>
+
+int main()
+{
+    printf("Hello World\n");
+    //wait_for_light(3);//
+     shut_down_in(118);
+    
+    create_connect();
+    create_drive_direct(200,200);
+    msleep(2200);//drive forward towards power lines	
+   
+    create_drive_direct(200,-75);
+    msleep(1200);//turns backwards
+    
+    create_drive_direct(-200,-200);
+    msleep(3500);
+    
+   create_drive_direct(200,200);
+
+    msleep(1500);
+    create_drive_direct(200,35);
+    msleep(2500);
+    create_drive_direct(200,200);
+    msleep(1000);
+    create_drive_direct(-75,200);
+    msleep(1680);
+    create_drive_direct(-200,-200);
+    msleep(2500);
+    create_drive_direct(200,200);
+    msleep(2000);
+    create_drive_direct(200,35);
+    msleep(2500);
+    
+    
+    
+    create_stop();
+    create_disconnect();
+    return 0;
+}
