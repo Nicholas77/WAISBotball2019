@@ -1,0 +1,33 @@
+//wait_for_light(3);//
+     shut_down_in(118);
+    
+    create_connect();
+    create_drive_direct(200,200);
+    msleep(2200);//drive forward towards power lines	
+   
+    create_drive_direct(200,-75);
+    msleep(1200);//turns backwards
+    
+    create_drive_direct(-200,-200);
+    msleep(3600);
+    
+   create_drive_direct(200,200);//returns with the people 
+    msleep(1500);
+    create_drive_direct(200,35);//turning for next people
+    msleep(3000);//3000 Original
+    create_drive_direct(200,200); //going for next people
+    msleep(1000);
+    create_drive_direct(-75,200);
+    msleep(1680);//1100 original
+    create_drive_direct(-200,-200);
+    msleep(2500);//2500 original
+    create_drive_direct(200,200);
+    msleep(2000);
+    create_drive_direct(200,35);
+    msleep(2500);
+    
+    
+    
+    
+    create_stop(); 
+    create_disconnect();
